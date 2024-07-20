@@ -2,3 +2,5 @@
 Front-End URL -> https://taskit-client-znp0.onrender.com
 <br>
 Back-End URL -> https://taskit-backend-g9ao.onrender.com
+<br>
+Dummy Credentials -> vai@vai.com  |  123456
