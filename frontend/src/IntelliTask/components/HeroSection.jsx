@@ -1,6 +1,16 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 export const HeroSection = () => {
+  useEffect(() => {
+   
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/users`)
+      .then(response => {
+        alert("Connected to server successfully!")
+      })
+      .catch(error => console.error('Error connecting to Server!', error));
+  },[]);
   return (
     <main className="bg-gradient-to-b from-background to-gradient text-white min-h-screen flex flex-col justify-between">
       <header className="py-16 text-center">

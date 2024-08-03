@@ -4,6 +4,10 @@ import { generateJWT } from '../helpers/generateJWT.js';
 import { sendConfirmationEmail, sendResetPasswordEmail } from '../services/emailService.js';
 import { front } from '../config/config.js';
 
+export const status = (req,res) => {
+  res.status(200).json({message: 'Connected to Server Successfully!'})
+}
+
 export const createUser = async (req, res) => {
 
   const { email, name, password } = req.body;

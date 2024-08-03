@@ -4,6 +4,7 @@ import { checkUserAuth } from '../middleware/checkUserAuth.js';
 
 const router = express.Router();
 
+router.get('/', userController.status);
 router.post('/', userController.createUser);
 router.post('/login', userController.authUser);
 router.get('/confirm/:token', userController.confirmUser);
